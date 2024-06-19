@@ -1,5 +1,5 @@
 import express from 'express'
-import {GoogleGenerativeAI} from "@google/generative-ai"
+import { GoogleGenerativeAI } from "@google/generative-ai"
 import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 dotenv.config();
@@ -12,7 +12,7 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', '*');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  
+
   next();
 });
 app.use(bodyParser.json());

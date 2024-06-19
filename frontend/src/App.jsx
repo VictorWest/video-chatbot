@@ -51,7 +51,7 @@ export default function App(){
     synth.cancel()
     setCanStop(false)
   }
-  // bg-[#161A30]
+  
   return (
     <main>
       <div className="flex flex-col gap-3 items-center">
